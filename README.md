@@ -15,4 +15,6 @@ Process: Understanding the process that could work versus the processes that wor
 
 Team: The team is novice at programming, coding, and this challenges the finished project's smoothness and fluidity of use.
 
+Collaboration Plan
 
+Annaka, Mike and Pradeesh plan to communicate through WhatsApp, Zoom, and Canvas. The maximum time zone difference between the members is 13 and half hours. The team will meet on Zoom adaptively as the project demands. The team will work collaboratively on all aspects of the project. 
