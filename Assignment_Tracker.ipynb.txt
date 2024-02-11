@@ -1,0 +1,194 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "340579a1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Code for widgets from https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Layout.html\n",
+    "#This program obtains a list of assignments from a csv file and reproduces the information in a go-table format.\n",
+    "#It also has two interactive widgets from ipywidgets that are used to mark one or more assignments as complete.\n",
+    "\n",
+    "import plotly.graph_objects as go\n",
+    "import pandas as pd\n",
+    "import ipywidgets as widgets\n",
+    "import datetime\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "13dab681",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Function for predeadline"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "324aab4f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "To initiate, select 'None' from the dropdown list and press the button 'Mark As Complete'\n"
+     ]
+    },
+    {
+     "data": {
+      "application/vnd.jupyter.widget-view+json": {
+       "model_id": "9782a8c210b34993a465e9b01f9070d6",
+       "version_major": 2,
+       "version_minor": 0
+      },
+      "text/plain": [
+       "VBox(children=(HBox(children=(Dropdown(description='Assignment Name:', options=('None', 'A1: P1: Read Articles…"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "#Read csv data and data to a new column titled 'Colors'\n",
+    "df = pd.read_csv('GP1 Dataset_ Assignments_PreDeadline.csv')\n",
+    "\n",
+    "#Add a column for determining font color\n",
+    "df['Colors'] = 'nil'\n",
+    "for index,row in df.iterrows():\n",
+    "    if row['DONE'] == 'Y':\n",
+    "        df.at[index,'Colors'] = 'red'\n",
+    "    else:\n",
+    "        df.at[index,'Colors'] = 'black'\n",
+    "        \n",
+    "#Add a column for determining background color and fontsize\n",
+    "df['Background'] = 'white'\n",
+    "df['Fontsize'] = 11\n",
+    "\n",
+    "#Create a list of Assignments to be used a list source for the drop down list widget\n",
+    "a_list = list(df['ASSIGNMENT NAME'])\n",
+    "a_list.insert(0,'None')\n",
+    "\n",
+    "#Pressing the button marks an assginment as complete\n",
+    "button = widgets.Button(description=\"Mark As Complete\")\n",
+    "text = widgets.Dropdown(\n",
+    "    options=a_list,\n",
+    "    value=a_list[0],\n",
+    "    description='Assignment Name:',\n",
+    "    disabled=False,\n",
+    ")\n",
+    "\n",
+    "#define the outputs\n",
+    "output = widgets.Output()\n",
+    "\n",
+    "#Define actions to be performed on button click\n",
+    "#@output.capture()\n",
+    "def on_button_clicked(b):\n",
+    "    with output:\n",
+    "        output.clear_output()\n",
+    "        a_name = text.value #obtain value of the drop down list\n",
+    "        \n",
+    "        if a_name == 'None':\n",
+    "            \n",
+    "            \n",
+    "            df.sort_values(by=['DONE', 'DATE'], inplace=True, ascending=[True,True])\n",
+    "            df.reset_index(drop=True, inplace=True)\n",
+    "            next_date = df.at[0,'DATE']\n",
+    "            \n",
+    "            df.at[0,'Background'] = 'yellow'\n",
+    "            df.at[0,'Fontsize'] = 14\n",
+    "            \n",
+    "            for i in [1,2]:\n",
+    "                if df.at[i,'DATE'] == next_date:\n",
+    "                    df.at[i,'Background'] = 'yellow'\n",
+    "                    df.at[i,'Fontsize'] = 14\n",
+    "        \n",
+    "        if a_name != 'None': #if value is 'None', no action is taken\n",
+    "            \n",
+    "            # identify the relevant assignment from database.\n",
+    "            #It is assumed here that there are no duplicate assignment names\n",
+    "            index_req = df.index[df['ASSIGNMENT NAME'] == a_name].to_list() \n",
+    "            \n",
+    "            #Mark the identified assignment as complete and sort the table based on Status followed by Date.\n",
+    "            df.at[index_req[0],'DONE'] = 'Y'\n",
+    "            df.at[index_req[0],'Colors'] = 'red'\n",
+    "            df.at[index_req[0],'Background'] = 'white' #reset background\n",
+    "            df.at[index_req[0],'Fontsize'] = 11 #reset fontsize\n",
+    "            \n",
+    "            df.sort_values(by=['DONE', 'DATE'], inplace=True, ascending=[True,True])\n",
+    "            \n",
+    "            #show the upcoming assignments in yellow background and larger font\n",
+    "            #select assignments having the same dates. Select max. upto 3 assignments\n",
+    "            next_date = df.at[index_req[0]+1,'DATE']\n",
+    "            df.at[index_req[0]+1,'Background'] = 'yellow'\n",
+    "            df.at[index_req[0]+1,'Fontsize'] = 14\n",
+    "            \n",
+    "            for i in [2,3]:\n",
+    "                if df.at[index_req[0]+i,'DATE'] == next_date:\n",
+    "                    df.at[index_req[0]+i,'Background'] = 'yellow'\n",
+    "                    df.at[index_req[0]+i,'Fontsize'] = 14\n",
+    "            \n",
+    "            \n",
+    "        #update drop down list\n",
+    "        a_list = list(df['ASSIGNMENT NAME'])\n",
+    "        a_list.insert(0,'None')\n",
+    "        text.options = a_list\n",
+    "        \n",
+    "        #write the updated database to a csv file\n",
+    "        df.to_csv('GP1 Dataset_ Assignments_PreDeadline.csv',columns=['DATE','PREDEADLINE','WK#','COURSE','ASSIGNMENT NAME','DESCRIPTION','DONE'])\n",
+    "        \n",
+    "        #define the go-table\n",
+    "        fig = go.Figure(data=[go.Table(header=dict(\n",
+    "        values=[\"Date\", \"Predeadline\",\"Week Number\",\"Course\",\"Assignment Name\",\"Description\",\"Done\"],\n",
+    "        line_color='white', fill_color='white',\n",
+    "        align='center', font=dict(color='blue', size=14)\n",
+    "        ),\n",
+    "        cells=dict(\n",
+    "        values=[df['DATE'],df['PREDEADLINE'],df['WK#'],df['COURSE'],df['ASSIGNMENT NAME'],df['DESCRIPTION'],df['DONE']],\n",
+    "        #line_color=[df.Colors], \n",
+    "        fill_color=[df.Background],\n",
+    "        align='center', font=dict(color= [df.Colors], size=11)\n",
+    "         ))\n",
+    "        ])\n",
+    "        \n",
+    "        #show the go-table\n",
+    "        fig.update_layout(width=1050, height=1000)\n",
+    "        fig.show()\n",
+    "        \n",
+    "\n",
+    "\n",
+    "button.on_click(on_button_clicked)\n",
+    "list_button = widgets.HBox([text,button])\n",
+    "print(\"To initiate, select 'None' from the dropdown list and press the button 'Mark As Complete'\")\n",
+    "widgets.VBox([list_button,output])"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
