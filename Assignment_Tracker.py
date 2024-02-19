@@ -49,8 +49,8 @@ from timezonefinder import TimezoneFinder
 
 
 # Initialize Nominatim and TimezoneFinder
-geolocator = Nominatim(user_agent="geocity")
-tf = TimezoneFinder()
+#geolocator = Nominatim(user_agent="geocity")
+#tf = TimezoneFinder()
 
 
 # # Define Functions
