@@ -31,15 +31,15 @@ import pandas as pd
 import ipywidgets as widgets
 import datetime
 import ipywidgets as widgets
-import fitz  # PyMuPDF for PDF files
-import requests
-import re  # For regular expressions
-import openpyxl  # For .xlsx files
-import xlrd  # For .xls files
-from docx import Document
-from bs4 import BeautifulSoup
-from IPython.display import display
-from geopy.geocoders import Nominatim
+#import fitz  # PyMuPDF for PDF files
+#import requests
+#import re  # For regular expressions
+#import openpyxl  # For .xlsx files
+#import xlrd  # For .xls files
+#from docx import Document
+#from bs4 import BeautifulSoup
+#from IPython.display import display
+#from geopy.geocoders import Nominatim
 from timezonefinder import TimezoneFinder
 
 
