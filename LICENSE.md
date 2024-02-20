@@ -1,11 +1,7 @@
 Blended Open Software License - Version 1.0 - February 20, 2024
 
 These licenses allow for:
-•	Commercial use: Users can use the software in commercial products.
-•	Modification: Users can modify the software as they see fit.
-•	Distribution: Users can distribute the software and their modifications.
-•	Private use: Users can use the software for private purposes.
-•	Sublicensing: Users can include the software as part of other software projects under different terms.
+-	Any use: Users can use the software in any context.
 
 Permission is hereby granted, free of charge, to any person or group obtaining
 a copy of this software and associated documentation files (the "Software"), to 
