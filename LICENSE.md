@@ -14,7 +14,7 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
 the Software, and to permit persons to whom the Software is furnished to do so, 
 subject to the following conditions:
 
-Attribution: No need to give appropriate credit, provide a link to the license, and 
+Attribution: No need to give appropriate credit, provide a link to the license, or 
 indicate if changes were made. You may do so in any improvement manner.
 Non-Endorsement: The authors will not endorse or promote products derived from this 
 software. 
