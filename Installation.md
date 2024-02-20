@@ -1,7 +1,10 @@
 # Installation Instructions for Class Assessment Tracker
 ## Version 1.0 
 **Date:** 24/02/2024
-**Author(s):** GroupProject-1: Pradeesh, Mike K, and Annaka
+
+**Author(s):**
+Team GroupProject-1
+Pradeesh, Mike K, and Annaka
 
 This project is designed for the platform Jupyter Notebook in the language of Python. 
 There are several packages that are needed to be installed and imported before the notbook will run.
@@ -9,22 +12,6 @@ Based on the context of a Jupyter Notebook-based class assessment tracker, here'
 the components of the installation document tailored to this specific application. This example assumes
 the tracker is a Jupyter Notebook designed to help instructors or students track and assess class assignments 
 and grades.
-
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Prerequisites](#prerequisites)
-3. [Dependencies](#dependencies)  
-4. [Installation Instructions](#installation-instructions)
-   - [Preparation](#preparation)
-   - [Installation Process](#installation-process)
-   - [Configuration and Setup](#configuration-and-setup)
-   - [Verification](#verification)
-5. [Troubleshooting](#troubleshooting)
-6. [Additional Resources](#additional-resources)
-7. [Glossary](#glossary)
-8. [Appendices](#appendices)
-9. [Contact Information](#contact-information)
-10. [Revision History](#revision-history)
 
 ## Introduction
 This document provides detailed instructions for installing and setting up the Class Assessment Tracker
@@ -38,7 +25,7 @@ and verification of a successful installation. This guide is intended for instru
 - Jupyter Notebook or JupyterLab installed.
 - Basic familiarity with running Jupyter Notebooks.
 
-### Preparation
+## Preparation
 1. Ensure Python and Jupyter Notebook are installed on your system. Visit [Python's official site](https://www.python.org/downloads/) 
 and [Jupyter's installation guide](https://jupyter.org/install) for instructions.
 2. Download the Class Assessment Tracker notebook file from [repository link or location].
@@ -47,7 +34,7 @@ and [Jupyter's installation guide](https://jupyter.org/install) for instructions
 Before installing the Class Assessment Tracker, ensure you have the following packages and libraries installed. 
 These dependencies are crucial for the functionality of the tracker:
 
-### Instalations and Imports
+## Instalations and Imports
 - **pandas:** A powerful data analysis and manipulation library for Python. Used for handling and 
 analyzing data sets within the tracker. Install via pip with `!pip install pandas`.
 - **pytz:** Provides timezone calculations for Python. Essential for handling time data that may span
@@ -79,16 +66,16 @@ and validating city names. Install via pip with `!pip install geopy`.
 - **TimezoneFinder:** A fast, lightweight library for looking up the timezone for any point on earth 
 (using latitude and longitude). Install via pip with `!pip install timezonefinder`.
 
-### Command Line Installation Process
+## Command Line Installation Process
 1. Open your terminal (or Command Prompt/PowerShell in Windows).
 2. Navigate to the directory where you downloaded the Class Assessment Tracker notebook.
 3. Launch Jupyter Notebook or JupyterLab by typing `jupyter notebook` or `jupyter lab` and pressing Enter.
 
-### Configuration and Setup
+## Configuration and Setup
 1. In the Jupyter interface, locate and open the Class Assessment Tracker notebook.
 2. Follow the instructions within the notebook to configure it for your class or assessment criteria.
 
-### Verification
+## Verification
 Ensure that the notebook runs without errors:
 1. Try executing all cells (In Jupyter Notebook, you can use the "Run All" feature under the "Cell" menu).
 2. Verify that the tracker allows for inputting and calculating grades as expected.
@@ -109,8 +96,8 @@ Ensure that the notebook runs without errors:
 that contain live code, equations, visualizations, and narrative text.
 
 ## Contact Information
-For further assistance, please contact the team.
+For further assistance, please contact Team GroupProject-1.
 
 ## Revision History
-- **[24/02/2024]:** Initial release of the installation instructions for Class Assessment Tracker version 1.0.
+- **24/02/2024** Initial release of the installation instructions for Class Assessment Tracker version 1.0.
 
