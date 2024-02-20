@@ -49,37 +49,35 @@ These dependencies are crucial for the functionality of the tracker:
 
 ### Instalations and Imports
 - **pandas:** A powerful data analysis and manipulation library for Python. Used for handling and 
-analyzing data sets within the tracker. Install via pip with `pip install pandas`.
+analyzing data sets within the tracker. Install via pip with `!pip install pandas`.
 - **pytz:** Provides timezone calculations for Python. Essential for handling time data that may span
-multiple time zones. Install via pip with `pip install pytz`.
+multiple time zones. Install via pip with `!pip install pytz`.
 - **plotly:** An interactive graphing library for Python. Used for creating dynamic, interactive 
-visualizations within the tracker. Install via pip with `pip install plotly`.
+visualizations within the tracker. Install via pip with `!pip install plotly`.
 - **ipywidgets:** Provides interactive HTML widgets for Jupyter notebooks. Used to create interactive user 
-interfaces within the tracker. Install via pip with `pip install ipywidgets`.
+interfaces within the tracker. Install via pip with `!pip install ipywidgets`.
 - **datetime:** A standard library module for manipulating dates and times. Used extensively for date 
 calculations and formatting.
 - **fitz (PyMuPDF):** A library to work with PDF files, including reading text and metadata. Used for
-processing PDF-based assignment submissions or resources. Install via pip with `pip install pymupdf`.
+processing PDF-based assignment submissions or resources. Install via pip with `!pip install pymupdf`.
 - **requests:** A simple HTTP library for Python. Used for making HTTP requests to download data or 
-interact with web services. Install via pip with `pip install requests`.
+interact with web services. Install via pip with `!pip install requests`.
 - **re (Regular Expressions):** A standard library module for string searching and manipulation 
 using regular expressions. Used for text processing and data extraction tasks.
 - **openpyxl:** A library for reading and writing Excel 2010 xlsx/xlsm/xltx/xltm files. Used for 
-handling Excel-based data inputs or outputs. Install via pip with `pip install openpyxl`.
+handling Excel-based data inputs or outputs. Install via pip with `!pip install openpyxl`.
 - **xlrd:** A library for reading data and formatting information from Excel files (specifically .xls).
-Install via pip with `pip install xlrd`.
+Install via pip with `!pip install xlrd`.
 - **python-docx (docx):** A Python library for creating and updating Microsoft Word (.docx) files. 
-Install via pip with `pip install python-docx`.
+Install via pip with `!pip install python-docx`.
 - **BeautifulSoup (bs4):** A library for parsing HTML and XML documents. Often used for web scraping tasks.
-Install via pip with `pip install beautifulsoup4`.
+Install via pip with `!pip install beautifulsoup4`.
 - **IPython.display:** A module for displaying various types of content in IPython environments. 
 Part of the IPython package and used for rich content display in Jupyter notebooks.
 - **geopy:** A Python client for several popular geocoding web services. Used for geocoding addresses
-and validating city names. Install via pip with `pip install geopy`.
+and validating city names. Install via pip with `!pip install geopy`.
 - **TimezoneFinder:** A fast, lightweight library for looking up the timezone for any point on earth 
-(using latitude and longitude). Install via pip with `pip install timezonefinder`.
-To install all required packages at once, you can use a `requirements.txt` file. If provided, run the 
-following command in your terminal:
+(using latitude and longitude). Install via pip with `!pip install timezonefinder`.
 
 ### Command Line Installation Process
 1. Open your terminal (or Command Prompt/PowerShell in Windows).
