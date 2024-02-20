@@ -1,7 +1,7 @@
 # Installation Instructions for Class Assessment Tracker
 ## Version 1.0 
-**Date:** [24/02/2024]  
-**Author(s):** [GroupProject-1: Pradeesh, Mike K, and Annaka]
+**Date:** 24/02/2024
+**Author(s):** GroupProject-1: Pradeesh, Mike K, and Annaka
 
 This project is designed for the platform Jupyter Notebook in the language of Python. 
 There are several packages that are needed to be installed and imported before the notbook will run.
