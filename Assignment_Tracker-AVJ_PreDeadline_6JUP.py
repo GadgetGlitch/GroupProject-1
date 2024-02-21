@@ -2,28 +2,19 @@
 # coding: utf-8
 
 # In[38]:
-
-
 import plotly.graph_objects as go
 import pandas as pd
 import ipywidgets as widgets
 import datetime
-
-
 # In[39]:
 
-
+# Only works on Annaka's Local Drive. File is located in the main branch, however. 
 file_path = r"C:\Users\annak\CAS-502 Computation\GroupProject-1\GP1 Dataset_ Assignments.csv"
 df = pd.read_csv(file_path, encoding='ISO-8859-1')  
 
-print(df.head())
-
+print(df.head()) #Print the tops of the headers of the table to see its original table set up
 
 # In[40]:
-
-
-# Imported datetime to handle dates
-import datetime
 
 # Function to calculate pre-deadline date
 def get_predeadline(deadline, buffer_days=1):
@@ -34,20 +25,14 @@ def get_predeadline(deadline, buffer_days=1):
     # Return predeadline date 
     return predeadline
 
-# Example usage    
+# Takes dates of assignments and subtracts a day for a preDeadline date # Proof of Concept by one date
 deadline = datetime.date(2023, 2, 15)  
 predeadline = get_predeadline(deadline, buffer_days=1) 
 
-print(predeadline) # 2023-02-13
-
+print(predeadline) # 2023-02-13 
 
 # In[44]:
-
-
-import pandas as pd
-import datetime
-
-# Load the CSV file
+# Getting prepared to convert all assignment deadline dates and making a column of preDeadline dates
 file_path = r"C:\Users\annak\CAS-502 Computation\GroupProject-1\GP1 Dataset_ Assignments.csv"
 df = pd.read_csv(file_path, encoding='ISO-8859-1')
 
@@ -69,12 +54,9 @@ df = df[column_order]
 # Print the new table headers
 print(df.head())
 
-
-
 # In[45]:
 
-
-# Original file path
+# Prepares the original table to make room for other colummns for a new document for UI visualization.
 original_file_path = r"C:\Users\annak\CAS-502 Computation\GroupProject-1\GP1 Dataset_ Assignments.csv"
 
 # Constructing the new file path
@@ -89,12 +71,12 @@ print(f"File saved as: {new_file_path}")
 
 # In[43]:
 
-
 #from https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Layout.html
 
-#Call predeadline function
+#Calls in predeadline function
 re_date = get_predeadline(deadline_date, buffer_days=2)
 
+#Takes the prepared csv file and makes the UI 
 df = pd.read_csv('GP1 Dataset_Assignment.csv')
 df['Colors'] = 'nil'
 for index,row in df.iterrows():
@@ -161,17 +143,8 @@ fig = go.Figure(data=[go.Table(header=dict(
           ))
         ])
 
-
-
 button.on_click(on_button_clicked)
 list_button = widgets.HBox([text,button])
 widgets.VBox([list_button,output])
 
-
-
-
 # In[ ]:
-
-
-
-
