@@ -18,3 +18,10 @@ Team: The team is novice at programming, coding, and this challenges the finishe
 Collaboration Plan:
 
 Annaka, Mike and Pradeesh plan to communicate through WhatsApp, Zoom, and Canvas. The maximum time zone difference between the members is 13 and half hours. The team will meet on Zoom adaptively as the project demands. The team will work collaboratively on all aspects of the project. 
+
+Linked Files:
+
+- [installation](https://github.com/GadgetGlitch/GroupProject-1/blob/main/Installation.md)
+- [User Document](https://github.com/GadgetGlitch/GroupProject-1/blob/main/User%20Document.md)
+- [License](https://github.com/GadgetGlitch/GroupProject-1/blob/main/License.md)
+- [Requirements](https://github.com/GadgetGlitch/GroupProject-1/blob/main/requirements.txt)
