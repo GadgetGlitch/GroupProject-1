@@ -1,70 +1,56 @@
-# Class Assessment Tracker User Documentation
+# Assignment Tracker User Documentation
 
-## How to Use the Class Assessment Tracker
-The Class Assessment Tracker is designed to simplify the tracking and assessment of 
-academic progress within a course. It's implemented as a Jupyter Notebook, offering 
-an interactive interface for managing course details, student information, and grades.
+## How to Use the Assignment Tracker
+The Assignment Tracker is designed to simplify the tracking of assignments within different courses taken by a student during a given time period. It is implemented as a Jupyter Notebook, offering an interactive interface for managing assignment status updates.
 
 ## Table of Contents
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Opening the Tracker](#opening-the-tracker)
-- [Using the Tracker](#using-the-tracker)
-  - [Input Parameters](#input-parameters)
-  - [Interactive Features](#interactive-features)
-  - [Output Parameters](#output-parameters)
-- [Saving and Exporting Data](#saving-and-exporting-data)
-- [Troubleshooting and Support](#troubleshooting-and-support)
-- [Additional Resources](#additional-resources)
-- [Conclusion](#conclusion)
+- Getting Started
+  - Prerequisites
+  - Opening the Tracker
+- Using the Notebook
+  - User City Details
+  - Assignment Tracker Table
+- Exporting Data
+- Conclusion
 
 ## Getting Started
 
 ### Prerequisites
-Before using the tracker, ensure you have:
-- Python (3.6+): [Installation Guide](https://www.python.org/downloads/)
-- Jupyter Notebook/Lab: [Installation Guide](https://jupyter.org/install)
-- Required Python packages: Install via `pip install -r requirements.txt` from the project directory.
+Please refer Installation.md file
 
 ## Opening the Tracker
-To use the Class Assessment Tracker:
+To use the Assignment Tracker:
 1. Ensure you have Jupyter Notebook or JupyterLab installed on your system.
-2. Open your command line interface (CLI) and navigate to the directory containing the tracker.
-3. Run `jupyter notebook` or `jupyter lab`.
-4. In the Jupyter interface, navigate to and open the Class Assessment Tracker notebook.
+2. Run `jupyter notebook` or `jupyter lab`.
+3. In the Jupyter interface, navigate to and open the Assignment Tracker notebook.
 
 ## Using the Notebook
 The notebook is divided into sections, each dedicated to a specific function of the assessment process:
 
-### Course Details:
-- **Input:** Course names, assignment details, due dates.
-- **Action:** Enter this information into designated cells within the notebook.
+### User City Details:
+- **Input:** Name of the city where the user is based
+- **Action:** Enter this information into designated cell under the section 'Ask the user for their city' of the notebook.
 
-### Student Information:
-- **Input:** Student names, IDs, and other relevant data.
-- **Action:** Input or import this data as instructed within the notebook.
+### Assignment Tracker table:
+- **Action:** Scroll to the last cell of the notebook. Check that the dropdown list shows 'None'. Now click the button 'Mark As Complete'.
+- The above action will display status of the Assignments as stored in the input csv file.
+- The table has following headers:
+- - ITEM: Shows Assignment number
+  - COURSE: The Assignment is from this course
+  - ASSIGNMENT NAME: Name of the Assignment
+  - DESCRIPTION: Description of the Assignment
+  - DATE: Due date for the assignment (as per the school's time zone)
+  - LOCAL_DUE_DATE: Due date for the assignment converted to user time zone
+  - PREDEADLINE: A one day buffer before LOCAL_DUE_DATE
+  - DONE: Status of the Assignment. 'Y' indicates completed. 'N' indicates not completed.
+- The next upcoming assignment (or upto three assignments, if all these fall on the same day) are shown in yellow highlight.
+- Completed assignments are shown at the bottom of the table in 'red' font.
 
-### Grades Input:
-- **Input:** Grades for each assignment per student.
-- **Action:** Record grades in the corresponding section of the notebook.
+- **Action:** To mark an assignment as complete, select the Assignment Name from the drop down list and then click 'Mark As Complete'. The table will be refreshed. Note that updates are saved to the original file. Thus, if the tracker is closed and opened again, the table will show the latest update made to the assignment status.
+- **Note:** Assignments once marked complete cannot be undone automtically through the tracker. Any such change has to be done directly within the csv file.
 
-## Interactive Features
-- **Widgets and Controls:** Utilize interactive widgets to filter data views, update entries, or calculate final grades.
-- **Visualizations:** Access dynamic charts and graphs for visual insights into grade distributions and class averages.
-
-## Output Parameters
-- **Grade Reports:** Generate detailed reports for individual students or entire classes, customizable via notebook widgets.
-- **Notifications:** Set up and receive notifications for upcoming deadlines or important milestones.
-
-## Saving and Exporting Data
-- **Saving Changes:** Use the standard Jupyter save functionality to save your notebook progress.
-- **Exporting Data:** Export data to CSV or Excel formats for external use, utilizing `pandas` DataFrame methods like `.to_csv()` or `.to_excel()`.
-
-## Troubleshooting and Support
-If you encounter issues or have questions about using the Class Assessment Tracker, please refer to the Troubleshooting section or contact [Your Contact Information].
-
-For additional guidance on Jupyter Notebook, Python installations, or package dependencies, visit the Additional Resources section.
-/pandas.pydata.org/pandas-docs/stable/)
+## Exporting Data
+- **Exporting Data:** Data is autmatically exported to the csv file everytime user clicks the 'Mark As Complete' button.
 
 ## Conclusion
-The Class Assessment Tracker aims to enhance your educational workflow. Feedback is welcome to improve future versions.
+The Assignment Tracker aims to enhance your assignment tracking workflow. 
