@@ -1,6 +1,6 @@
 Blended Open Software License - Version 1.0 - February 20, 2024
 
-These licenses allow for:
+This licenses allow for:
 -	Any use: Users can use the software in any context.
 
 Permission is hereby granted, free of charge, to any person or group obtaining
