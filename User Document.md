@@ -4,14 +4,14 @@
 The Assignment Tracker is designed to simplify the tracking of assignments within different courses taken by a student during a given time period. It is implemented as a Jupyter Notebook, offering an interactive interface for managing assignment status updates.
 
 ## Table of Contents
-- Getting Started
-  - Prerequisites
-  - Opening the Tracker
-- Using the Notebook
-  - User City Details
-  - Assignment Tracker Table
-- Exporting Data
-- Conclusion
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Opening the Tracker](#opening-the-tracker)
+- [Using the Notebook](#using-the-notebook)
+  - [User City Details](#user-city-details)
+  - [Assignment Tracker Table](#assignment-tracker-table)
+- [Exporting Data](#exporting-data)
+- [Conclusion](#conclusion)
 
 ## Getting Started
 
@@ -27,11 +27,11 @@ To use the Assignment Tracker:
 ## Using the Notebook
 Once the notebook is opened, run all the cells in the notebook. This can be done by going to 'Cell' from the menu and selecting 'Run All'.
 
-### User City Details:
+### User City Details
 - **Input:** Name of the city where the user is based
 - **Action:** Enter this information into designated cell under the section 'Ask the user for their city' of the notebook.
 
-### Assignment Tracker table:
+## Assignment Tracker Table
 - **Action:** Scroll to the last cell of the notebook. Check that the dropdown list shows 'None'. Now click the button 'Mark As Complete'.
 - The above action will display status of the Assignments as stored in the input csv file.
 - The table has following headers:
