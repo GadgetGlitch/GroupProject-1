@@ -22,7 +22,7 @@ If you would like to contribute, please feel free to create a fork of our reposi
 
 Linked Files:
 
-- [installation](https://github.com/GadgetGlitch/GroupProject-1/blob/main/Installation.md)
+- [Installation](https://github.com/GadgetGlitch/GroupProject-1/blob/main/Installation.md)
 - [User Document](https://github.com/GadgetGlitch/GroupProject-1/blob/main/User%20Document.md)
 - [License](https://github.com/GadgetGlitch/GroupProject-1/blob/main/License.md)
 - [Requirements](https://github.com/GadgetGlitch/GroupProject-1/blob/main/requirements.txt)
