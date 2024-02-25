@@ -26,7 +26,7 @@ and [Jupyter's installation guide](https://jupyter.org/install) for instructions
 2. Download the repository and open Assignment Tracker notebook file from this repository. Sample data (csv) file is provided in Datasets folder of this repository. 
 
 ## Dependencies
-Before running the Assignment Tracker, ensure you have reviewed the requirements.txt file and have installed all the packages and libraries listed in the file. These dependencies are crucial for the functionality.
+Before running the Assignment Tracker, ensure you have reviewed the [requirements.txt](https://github.com/GadgetGlitch/GroupProject-1/blob/main/requirements.txt) file and have installed all the packages and libraries listed in the file. These dependencies are crucial for the functionality.
 
 ## Command Line Installation Process
 1. Open your terminal (or Command Prompt/PowerShell in Windows).
@@ -55,7 +55,7 @@ Ensure that the notebook runs without errors:
 that contain live code, equations, visualizations, and narrative text.
 
 ## Contact Information
-For further assistance, please contact Team GroupProject-1.
+For further assistance, please contact Team GroupProject-1 through GitHub.
 
 ## Revision History
-- **24/02/2024** Initial release of the installation instructions for Class Assessment Tracker version 1.0.
+- **25/02/2024** Initial release of the installation instructions for Class Assessment Tracker version 1.0.
