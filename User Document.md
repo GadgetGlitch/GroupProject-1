@@ -35,7 +35,7 @@ Once the notebook is opened, run all the cells in the notebook. This can be done
 - **Action:** Scroll to the last cell of the notebook. Check that the dropdown list shows 'None'. Now click the button 'Mark As Complete'.
 - The above action will display status of the Assignments as stored in the input csv file.
 - The table has following headers:
-- - ITEM: Shows Assignment number
+  - ITEM: Shows Assignment number
   - COURSE: The Assignment is from this course
   - ASSIGNMENT NAME: Name of the Assignment
   - DESCRIPTION: Description of the Assignment
