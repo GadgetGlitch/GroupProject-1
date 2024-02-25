@@ -38,7 +38,7 @@ Before running the Assignment Tracker, ensure you have reviewed the requirements
 
 ## Verification
 Ensure that the notebook runs without errors:
-1. Try executing all cells (In Jupyter Notebook, you can use the "Run All" feature under the "Cell" menu). Note that one of the cells will ask the user to input the name of their city. Subsequent cells of the notebook can be run only after user provides this input.
+- Try executing all cells (In Jupyter Notebook, you can use the "Run All" feature under the "Cell" menu). Note that one of the cells will ask the user to input the name of their city. Subsequent cells of the notebook can be run only after user provides this input.
 
 ## Troubleshooting
 - **Issue:** Jupyter Notebook does not launch.
