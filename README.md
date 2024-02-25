@@ -1,20 +1,28 @@
-Assignment Tracker
+# Assignment Tracker
 
-Team Members: Pradeesh, Annaka, and Mike K. 
+## Team Members: Pradeesh, Annaka, and Mike K. 
 
-Description: 
+## Description: 
 
 Each semester students have many classes, this means many assignments and deadlines. Online students who live out of the schools’ time zone have the extra burden of converting time zones for each assignment. In order to keep track of many tables and checkbox tools have to be reprogrammed every semester. This proves to be a tedious task and adds in human errors from data entry. The project aims to address this issue by means of a simple Assignment Tracker program.
-Our anticipated challenges and collab plan: 
 
-Anticipated Challenges:
+The program reads a csv file that contains details such as Assignment title, assignment description, due date provided by the school, school time zone and completion status. The data is presented in the form of a table with upcoming assignments displayed in the top rows and completed assginments marked in red font and shifted to the bottom rows. The table gets updated whenever a user marks an assignment as complete. 
 
-Technical: Basic Feature item #1 lists being able to feed the tool a csv file due to lack of technical exposure to know-how over webscraping for webpage data i.e. Canvas. Getting this information into a csv or text file is a challenge. File converting comes with many data transferring issues. Getting a table of data may require manual data entry which can override the need for the tool in the first place.  
+The program is released under the Blended Open Software License - Version 1.0. Details can be found in the License.md file.
 
-Process: Understanding the process that could work versus the processes that work the best might take some time. Researching different ways to do the same thing can lead to time delays.
+Detailed instructions for the installations required to run the program can be found in the Installation.md file.
 
-Team: The team is novice at programming, coding, and this challenges the finished project's smoothness and fluidity of use.
+Step by step instructions for running the program is available in the User Document.md file
 
-Collaboration Plan:
+## Additional information:
 
-Annaka, Mike and Pradeesh plan to communicate through WhatsApp, Zoom, and Canvas. The maximum time zone difference between the members is 13 and half hours. The team will meet on Zoom adaptively as the project demands. The team will work collaboratively on all aspects of the project. 
+You can report bugs and request new features to Team GroupProject-1.
+
+If you would like to contribute, please feel free to create a fork of our repository and inform us once you have made the changes. We will review the same and then make a decision on inclusion of the update to the project.
+
+Linked Files:
+
+- [installation](https://github.com/GadgetGlitch/GroupProject-1/blob/main/Installation.md)
+- [User Document](https://github.com/GadgetGlitch/GroupProject-1/blob/main/User%20Document.md)
+- [License](https://github.com/GadgetGlitch/GroupProject-1/blob/main/License.md)
+- [Requirements](https://github.com/GadgetGlitch/GroupProject-1/blob/main/requirements.txt)
