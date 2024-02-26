@@ -21,9 +21,9 @@ You can report bugs and request new features to Team GroupProject-1.
 If you would like to contribute, please feel free to create a fork of our repository and inform us once you have made the changes. We will review the same and then make a decision on inclusion of the update to the project.
 
 Linked Files:
-- [Zenodo Release DOI](https://zenodo.org/records/10689841) 
 - [Installation](https://github.com/GadgetGlitch/GroupProject-1/blob/main/Installation.md)
 - [User Document](https://github.com/GadgetGlitch/GroupProject-1/blob/main/User%20Document.md)
 - [License](https://github.com/GadgetGlitch/GroupProject-1/blob/main/License.md)
 - [Requirements](https://github.com/GadgetGlitch/GroupProject-1/blob/main/requirements.txt)
 - [Citation](https://github.com/GadgetGlitch/GroupProject-1/blob/main/Citation.md)
+- [Zenodo Release DOI](https://zenodo.org/records/10689841) 
