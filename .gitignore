@@ -12,3 +12,6 @@ Recent/
 SendTo/
 Start Menu/
 Templates/
+# Ignore temporary files
+*.tmp
+*.log
