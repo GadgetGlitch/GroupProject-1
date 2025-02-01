@@ -1,0 +1,14 @@
+# Ignore common system directories in Windows
+AppData/
+Application Data/
+Cookies/
+Documents/
+Intel/
+Local Settings/
+My Documents/
+NetHood/
+PrintHood/
+Recent/
+SendTo/
+Start Menu/
+Templates/
